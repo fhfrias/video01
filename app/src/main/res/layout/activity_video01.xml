@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00fff7"
+    tools:context=".Video01">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REPRODUCIENDO VIDEO"
+        android:textColor="#ff00"
+        android:textStyle="bold"
+        android:textSize="20dp"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+
+    <TextView
+        android:id="@+id/txt_ficherovideo"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FICHERO DE VIDEO"
+        android:textStyle="bold"
+        android:textColor="#ff00"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btn_reproducir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REPRODUCIR"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_parar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PARAR"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIDEOS ENCONTRADOS"
+        android:textColor="#ff00"
+        android:textSize="20dp"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+
+</LinearLayout>
